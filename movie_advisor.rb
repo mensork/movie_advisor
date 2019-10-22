@@ -1,5 +1,5 @@
-require_relative "film.rb"
-require_relative "film_collection.rb"
+require_relative "lib/film.rb"
+require_relative "lib/film_collection.rb"
 
 system 'cls'
 current_path = File.dirname(__FILE__)
