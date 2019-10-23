@@ -3,9 +3,9 @@ class Film
   def initialize(file_path)
     film_file = File.readlines(file_path)
 
-    @title = film_file[0]
-    @director = film_file[1]
-    @year = film_file[2]
+    @title = film_file[0].chomp
+    @director = film_file[1].chomp
+    @year = film_file[2].chomp
   end
 
   def to_s

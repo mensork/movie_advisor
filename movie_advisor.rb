@@ -2,9 +2,8 @@ require_relative "lib/film.rb"
 require_relative "lib/film_collection.rb"
 
 system 'cls'
-current_path = File.dirname(__FILE__)
 
-files_array = Dir.glob("#{current_path}/data/*.txt")
+files_array = Dir.glob("#{__dir__}/data/*.txt")
 
 films = files_array.map {|file| Film.new(file)}
 
